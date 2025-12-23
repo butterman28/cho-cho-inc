@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post Detail</title>
+
+  <!-- Tailwind -->
+  <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <main class="pt-28 max-w-5xl mx-auto px-4">
+
+    <!-- Loader -->
+    <div id="loader" class="flex justify-center items-center h-64">
+      <div class="animate-spin rounded-full h-12 w-12 border-4 border-blue-600 border-t-transparent"></div>
+    </div>
+
+    <!-- Post Content -->
+    <article
+      id="postContent"
+      class="hidden bg-white shadow rounded-lg p-6 space-y-6"
+    ></article>
+
+  </main>
+
+  <!-- Navbar (JS-injected) -->
+  <script type="module">
+    import { renderNavbar } from "/src/js/navbar.js";
+    renderNavbar();
+  </script>
+
+  <!-- Page Logic -->
+  <script type="module" src="src/js/post-detail.js"></script>
+
+</body>
+</html>

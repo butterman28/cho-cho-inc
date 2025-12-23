@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musings with Dara</title>
+
+  <!-- Tailwind CSS (CLI output) -->
+  <link href="/src/output.css" rel="stylesheet">
+</head>
+
+  <!-- Reusable Navbar -->
+
+  <!-- Page Content -->
+  <main class="pt-28">
+    <section class="relative flex flex-col items-center text-center px-6 py-20 space-y-12 overflow-hidden">
+
+  <!-- Image -->
+  <img
+    src="/src/assets/passport.png"
+    alt="cho-cho-cho"
+    class="
+      w-64 h-64
+      sm:w-80 sm:h-80
+      md:w-[28rem] md:h-[28rem]
+      object-cover
+      rounded-2xl
+      shadow-2xl
+    "
+  />
+
+  <!-- Description -->
+  <p class="
+    max-w-3xl
+    text-lg sm:text-xl md:text-2xl
+    leading-relaxed
+    text-gray-700
+  ">
+    Science communication, articles and discussions on a variety of Nigerian-related public-health,
+    cultural and political issues, vibrant ideas and more.
+  </p>
+
+</section>
+
+
+  </main>
+
+
+   <!-- Navbar -->
+  <script type="module">
+    import { renderNavbar } from "/src/js/navbar.js";
+    renderNavbar();
+  </script>
+
+
+
+</body>
+</html>

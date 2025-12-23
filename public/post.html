@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Articles</title>
+
+  <!-- Tailwind -->
+  <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <main class="pt-28 max-w-7xl mx-auto px-4">
+
+    <h1
+      id="pageTitle"
+      class="text-3xl font-bold underline text-center mb-12"
+    >
+      Articles
+    </h1>
+
+    <div
+      id="postGrid"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center"
+    ></div>
+
+  </main>
+
+  <!-- Navbar -->
+  <script type="module">
+    import { renderNavbar } from "/src/js/navbar.js";
+    renderNavbar();
+  </script>
+
+  <!-- Page Logic -->
+  <script type="module" src="src/js/post.js"></script>
+
+</body>
+</html>
