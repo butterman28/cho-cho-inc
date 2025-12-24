@@ -5,7 +5,8 @@
   "scripts": {
     "vite": "vite",
     "tailwind": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "dev": "npm-run-all --parallel tailwind vite"    
+    "dev": "npm-run-all --parallel tailwind vite",
+    "build": "tailwindcss -i ./src/input.css -o ./public/style.css --minify"   
   },
   "keywords": [],
   "author": "",

@@ -6,12 +6,12 @@
   <title>Post Detail</title>
 
   <!-- Tailwind -->
-  <link rel="stylesheet" href="/src/output.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gray-50 text-gray-900" style="background-color: #04c4c9;">
 
-  <main class="pt-28 max-w-5xl mx-auto px-4">
+  <main class="pt-28 max-w-5xl mx-auto px-4" >
 
     <!-- Loader -->
     <div id="loader" class="flex justify-center items-center h-64">
@@ -28,12 +28,12 @@
 
   <!-- Navbar (JS-injected) -->
   <script type="module">
-    import { renderNavbar } from "/src/js/navbar.js";
+    import { renderNavbar } from "/js/navbar.js";
     renderNavbar();
   </script>
 
   <!-- Page Logic -->
-  <script type="module" src="src/js/post-detail.js"></script>
+  <script type="module" src="/js/post-detail.js"></script>
 
 </body>
 </html>
